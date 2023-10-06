@@ -432,7 +432,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
           fit: BoxFit.cover,
           loadingBuilder: (_, child, progress) =>
               progress == null ? child : Container(color: Colors.black),
-          errorBuilder: (context, _, __) => Container(),
+          errorBuilder: (context, _, __) => Image.asset('assets/images/placeholder.jpg'),
         ),
       );
 }
